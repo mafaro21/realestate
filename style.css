@@ -1,0 +1,189 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --background: #fff;
+    --text: #000;
+    --accent: #0275d8;
+}
+
+.switch input {
+    display: none;
+}
+
+.d-none {
+    background-color: #0091EA;
+    width: 40%;
+}
+
+h3 {
+    text-align: left;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    transition: 0.5s background ease;
+}
+
+.navbar {
+    background-color: white;
+    top: 0px;
+}
+
+input {
+    width: 40%;
+}
+
+.visible {
+    visibility: visible !important;
+}
+
+a:hover {
+    color: purple;
+}
+
+.white {
+    color: white;
+}
+
+.black {
+    color: black;
+}
+
+.top {
+    margin-top: 80px;
+}
+
+.to {
+    margin-top: 30px;
+}
+
+.left {
+    margin-left: 30px;
+}
+
+.text {
+    text-align: center;
+}
+
+.accent {
+    color: #0275d8
+}
+
+.main-image {
+    height: auto;
+    width: 100%;
+}
+
+hr {
+    border: 1px solid black;
+}
+
+
+/* text over images probably */
+
+.pic-text {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    background-color: #0275d8;
+}
+
+.pic {
+    text-align: center;
+    position: relative;
+}
+
+
+/* ok it worked */
+
+footer {
+    background-color: #0275d8;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: block;
+    color: white;
+    text-align: center;
+}
+
+strong {
+    color: white;
+}
+
+
+/* card hover effect */
+
+.card {
+    transition: box-shadow .3s;
+}
+
+.card:hover {
+    box-shadow: 0 0 50px rgba(33, 33, 33, .6);
+}
+
+.card0 a {
+    text-decoration: none;
+}
+
+
+/* card */
+
+
+/* forms */
+
+.form {
+    color: #0275d8;
+}
+
+.content {
+    display: flex;
+}
+
+.width {
+    width: 50%;
+    margin-top: 50px;
+}
+
+.border {
+    background-color: white;
+}
+
+.login {
+    margin-top: 150px;
+}
+
+
+/* forms */
+
+.adminBody {
+    background-color: #81D4FA;
+}
+
+.sidebar {
+    position: fixed;
+}
+
+
+/* like button */
+
+.like {
+    outline: 0;
+    cursor: pointer;
+    color: white;
+}
+
+.like:focus {
+    outline: none;
+}
+
+.blue {
+    color: #0275d8;
+}
