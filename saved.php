@@ -113,9 +113,6 @@ if (!$_SESSION['email']) {
                     <?php }
                 } ?>
 
-
-
-
             </main>
         </div>
     </div>
