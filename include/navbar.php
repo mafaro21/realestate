@@ -2,7 +2,7 @@
 
 
 
-<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-primary">
+<nav class="navbar navbar-expand-lg sticky-top navbar-light bg-primary">
     <div class="container">
         <div class="container">
             <a class="navbar-brand logo" href="index.php">Real<strong>Estate</strong> </a>
@@ -22,7 +22,7 @@
     <div class="collapse container navbar-collapse justify-content-end" id="navbarNavAltMarkup">
         <a class="nav-item nav-link white active" href="houses.php">Houses </a>
 
-        <a class="nav-item nav-link white active" href="apartments.php">Apartments </a>
+        <a class="nav-item nav-link white active apartments" href="apartments.php">Apartments </a>
 
         <!-- <a class="nav-item nav-link white active" href="user.php">My Account </a> -->
 

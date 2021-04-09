@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Oxygen', sans-serif;
 }
 
 :root {
@@ -23,9 +26,10 @@ h3 {
 }
 
 body {
-    background-color: var(--background);
+    background-color: orange;
     color: var(--text);
     transition: 0.5s background ease;
+    font-family: 'Oxygen', sans-serif;
 }
 
 .navbar {
@@ -76,6 +80,10 @@ a:hover {
 .main-image {
     height: auto;
     width: 100%;
+}
+.home-img{
+    width: 800px; 
+    height: 500px;
 }
 
 hr {
@@ -133,6 +141,11 @@ strong {
     text-decoration: none;
 }
 
+.card-img{
+    width: 315px;
+    height: 600px;
+}
+
 
 /* card */
 
@@ -160,6 +173,11 @@ strong {
     margin-top: 150px;
 }
 
+/* product page */
+.product-img{
+    width: 7px; 
+    height: 4px;
+}
 
 /* forms */
 
@@ -186,4 +204,22 @@ strong {
 
 .blue {
     color: #0275d8;
+}
+
+
+@media screen and (min-width: 500px){
+
+    .home-img{
+        width: 800px; 
+        height: 800px;
+    }
+
+    .apartments{
+        display: none;
+    }
+
+    .product-img{
+        width: 20px; 
+        height: 20px;
+    }
 }

@@ -7,7 +7,7 @@
     <div class="container top ">
 
         <p style="font-weight: bold;">
-            <h2 class="text">ALL APARTMENTS</h2>
+        <h2 class="text">ALL APARTMENTS</h2>
         </p>
         <div class="row card0">
             <?php
@@ -21,10 +21,10 @@
                         <div>
                             <a href="product.php?id=<?php echo $row['id']; ?>">
                                 <div class="card p-3 mb-4 bg-white rounded">
-                                    <img src="images/<?php echo $row['images']; ?> " width="315px" height="200px" class="rounded img-fluid" />
+                                    <img src="images/<?php echo $row['images']; ?> " card-img class="rounded img-fluid" />
                                     <p>
-                                        <h5><?php echo $row['location']; ?> </h5>
-                                        <h5 class="price"><?php echo "$" . $row['buy']; ?> </h5>
+                                    <h5><?php echo $row['location']; ?> </h5>
+                                    <h5 class="price"><?php echo "$" . $row['buy']; ?> </h5>
                                     </p>
                                 </div>
                             </a>

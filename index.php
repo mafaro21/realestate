@@ -15,19 +15,19 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="images/img10.jpg" width="800" height="500" class="bd-placeholder-img-lg d-block w-100 " color="#555" background="#777" text="First slide" />
+                <img src="images/img10.jpg" class="bd-placeholder-img-lg d-block w-100 home-img img-fluid" color="#555" background="#777" text="First slide" />
                 <div class="carousel-caption d-none d-md-block ">
                     <h3>Let us Guide You To A New Home</h3>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="images/img12-1.jpg" width="800" height="500" class="bd-placeholder-img-lg d-block w-100 " color="#444" background="#666" text="Second slide" />
+                <img src="images/img12-1.jpg" class="bd-placeholder-img-lg d-block w-100 home-img img-fluid" color="#444" background="#666" text="Second slide" />
                 <div class="carousel-caption d-none d-md-block">
                     <h3>Cozy Homes Because You And Your Family Are Worth It</h3>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="images/img9.jpg" width="800" height="500" class="bd-placeholder-img-lg d-block w-100 " color="#333" background="#555" text="Third slide" />
+                <img src="images/img9.jpg" class="bd-placeholder-img-lg d-block w-100 home-img img-fluid" color="#333" background="#555" text="Third slide" />
                 <div class="carousel-caption d-none d-md-block">
                     <h3>Click Or Call We Do It All!</h3>
                 </div>
@@ -60,13 +60,13 @@
                             <a href="product.php?id=<?php echo $row['id']; ?>">
                                 <div class="card  p-3 mb-4 bg-white rounded">
 
-                                    <img src="images/<?php echo $row['images']; ?> " width="315px" height="200px" class="rounded img-fluid" />
+                                    <img src="images/<?php echo $row['images']; ?> " card-img class="rounded img-fluid" />
 
                                     <div class="content">
                                         <div>
                                             <p>
-                                                <h5><?php echo $row['location']; ?> </h5>
-                                                <h5 class="price"><?php echo "$" . $row['buy']; ?> </h5>
+                                            <h5><?php echo $row['location']; ?> </h5>
+                                            <h5 class="price"><?php echo "$" . $row['buy']; ?> </h5>
                                             </p>
                                         </div>
 
@@ -97,13 +97,13 @@
                                 <a href="product.php?id=<?php echo $row['id']; ?>">
                                     <div class="card  p-3 mb-4 bg-white rounded">
 
-                                        <img src="images/<?php echo $row['images']; ?> " width="315px" height="200px" class="rounded img-fluid" />
+                                        <img src="images/<?php echo $row['images']; ?> " card-img class="rounded img-fluid" />
 
                                         <div class="content">
                                             <div>
                                                 <p>
-                                                    <h5><?php echo $row['location']; ?> </h5>
-                                                    <h5 class="price"><?php echo "$" . $row['buy']; ?> </h5>
+                                                <h5><?php echo $row['location']; ?> </h5>
+                                                <h5 class="price"><?php echo "$" . $row['buy']; ?> </h5>
                                                 </p>
                                             </div>
 

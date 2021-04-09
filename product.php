@@ -19,19 +19,20 @@ require_once 'config.php';
                 <div class="content">
                     <div>
                         <img src="images/<?php echo $row['images']; ?> " width="700px" height="400px" />
+                        <!--   class="product-img"-->
                     </div>
                     <div class="left to">
                         <p>
-                            <h4> FOR SALE: $<?php echo $row['buy']; ?></h4>
+                        <h4> FOR SALE: $<?php echo $row['buy']; ?></h4>
 
-                            <h4> FOR RENT: $<?php echo $row['rent']; ?>/mo</h4>
+                        <h4> FOR RENT: $<?php echo $row['rent']; ?>/mo</h4>
 
-                            <h4> DOWNPAYMENT: $<?php echo $row['down']; ?></h4>
+                        <h4> DOWNPAYMENT: $<?php echo $row['down']; ?></h4>
                         </p>
                         <p>
-                            <h5>Description:</h5>
+                        <h5>Description:</h5>
 
-                            <?php echo $row['description']; ?>
+                        <?php echo $row['description']; ?>
                         </p>
 
                     </div>
@@ -110,12 +111,16 @@ require_once 'config.php';
             $sql = "SELECT * FROM comments WHERE prodId = '$id'; ";
             $query = mysqli_query($conn, $sql);
             while ($row = mysqli_fetch_array($query)) {
+                $test =
+                    $row['time'];
+
+                $date = date("d-M-yy H:i", strtotime($test));
             ?>
                 <div>
                     <div class="content">
                         <p><?php echo $row['email']; ?></p>
                         <br>
-                        <p class="left blue"><?php echo $row['time']; ?></p>
+                        <p class="left blue"><?php echo $date ?></p>
                     </div>
                     <p><?php echo $row['comment']; ?></p>
                     <hr>
