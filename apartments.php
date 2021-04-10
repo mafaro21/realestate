@@ -20,7 +20,7 @@
                     <div>
                         <div>
                             <a href="product.php?id=<?php echo $row['id']; ?>">
-                                <div class="card p-3 mb-4 bg-white rounded">
+                                <div class="card p-3 mb-4 card-back rounded">
                                     <img src="images/<?php echo $row['images']; ?> " card-img class="rounded img-fluid" />
                                     <p>
                                     <h5><?php echo $row['location']; ?> </h5>

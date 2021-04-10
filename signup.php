@@ -6,7 +6,7 @@
         <br />
         <br />
 
-        <div class="width login container border border-primary">
+        <div class="width login container border border-primary p-3">
 
             <h1>
                 <p>Create a New Account</p>

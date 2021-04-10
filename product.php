@@ -16,10 +16,10 @@ require_once 'config.php';
             <h2 class="text"><?php echo $row['location']; ?></h2>
 
             <div class="container to">
-                <div class="content">
+                <div class="product-content">
                     <div>
-                        <img src="images/<?php echo $row['images']; ?> " width="700px" height="400px" />
-                        <!--   class="product-img"-->
+                        <img src="images/<?php echo $row['images']; ?> " class="product-img" />
+                        <!-- width="700px" height="400px"-->
                     </div>
                     <div class="left to">
                         <p>

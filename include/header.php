@@ -23,8 +23,8 @@
 
 
 
-
     <link rel="stylesheet" href="style.css" />
+
 
     <!-- includes the Braintree JS client SDK -->
     <script src="https://js.braintreegateway.com/web/dropin/1.25.0/js/dropin.min.js"></script>

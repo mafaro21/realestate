@@ -6,6 +6,9 @@
     <div class="container">
         <div class="container">
             <a class="navbar-brand logo" href="index.php">Real<strong>Estate</strong> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         </div>
 
         <!-- search bar -->
@@ -19,10 +22,10 @@
     </div>
 
 
-    <div class="collapse container navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
         <a class="nav-item nav-link white active" href="houses.php">Houses </a>
 
-        <a class="nav-item nav-link white active apartments" href="apartments.php">Apartments </a>
+        <a class="nav-item nav-link white active " href="apartments.php">Apartments </a>
 
         <!-- <a class="nav-item nav-link white active" href="user.php">My Account </a> -->
 

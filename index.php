@@ -7,11 +7,15 @@
 
 
     <!-- the slides that show up on the home page -->
-    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade index" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
             <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+
+
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -28,6 +32,18 @@
             </div>
             <div class="carousel-item">
                 <img src="images/img9.jpg" class="bd-placeholder-img-lg d-block w-100 home-img img-fluid" color="#333" background="#555" text="Third slide" />
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Click Or Call We Do It All!</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/adam-winger.jpg" class="bd-placeholder-img-lg d-block w-100 home-img img-fluid" color="#333" background="#555" text="Fourth slide" />
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Click Or Call We Do It All!</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/stephen-zoo.jpg" class="bd-placeholder-img-lg d-block w-100 home-img img-fluid" color="#333" background="#555" text="Fourth slide" />
                 <div class="carousel-caption d-none d-md-block">
                     <h3>Click Or Call We Do It All!</h3>
                 </div>
@@ -58,7 +74,7 @@
                     <div>
                         <div>
                             <a href="product.php?id=<?php echo $row['id']; ?>">
-                                <div class="card  p-3 mb-4 bg-white rounded">
+                                <div class="card  p-3 mb-4 card-back rounded">
 
                                     <img src="images/<?php echo $row['images']; ?> " card-img class="rounded img-fluid" />
 
@@ -95,7 +111,7 @@
                         <div>
                             <div>
                                 <a href="product.php?id=<?php echo $row['id']; ?>">
-                                    <div class="card  p-3 mb-4 bg-white rounded">
+                                    <div class="card  p-3 mb-4 card-back rounded">
 
                                         <img src="images/<?php echo $row['images']; ?> " card-img class="rounded img-fluid" />
 

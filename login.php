@@ -9,11 +9,11 @@
 
 
 
-        <div class="container width border border-primary  login">
+        <div class="container width border border-primary login p-3">
 
 
             <h1>
-                <p class="accent ">Log in to continue</p>
+                <p class="accent ">Log In</p>
             </h1>
             <br>
             <!--log in form-->
