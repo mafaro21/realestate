@@ -14,11 +14,7 @@
                 <p class="white">Affordable housing, Fantastic Customer Service</p>
 
             </div>
-            <!-- Grid column -->
 
-            <hr class="clearfix w-100 d-md-none pb-3">
-
-            <!-- Grid column -->
             <div class="col-md-3 mb-md-0 mb-3">
 
                 <!--nothing here to have the indent -->

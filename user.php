@@ -16,20 +16,20 @@ if (!$_SESSION['email']) {
                         <li class="nav-item ">
                             <a class="active" href="#">
                                 <span data-feather="home"></span>
-                                <h5 class="text-dark">Dashboard</h5> <span class="sr-only">(current)</span>
+                                <h5 class="text white">Dashboard</h5> <span class="sr-only">(current)</span>
                             </a>
                         </li>
                         <hr style="border: 1px solid ">
                         <li class="nav-item">
                             <a href="edit.php">
                                 <span data-feather="file"></span>
-                                <h5 class="color text-dark">Edit Profile</h5>
+                                <h5 class="text white">Edit Profile</h5>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="saved.php">
                                 <span data-feather="file"></span>
-                                <h5 class="color text-dark">Saved Houses</h5>
+                                <h5 class="text white">Saved Houses</h5>
                             </a>
                         </li>
 
@@ -41,13 +41,13 @@ if (!$_SESSION['email']) {
             </nav>
 
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4 top ">
-                <div class="align-items-center pt-3 pb-2 mb-3 border-bottom ">
+                <div class="align-items-center pt-3 pb-2 mb-3 border-bottom white">
                     <h2>WELCOME <?php echo $_SESSION['email']; ?></h2>
 
                 </div>
 
                 <div>
-                    <h2>User Panel</h2>
+                    <h2 class="white">User Panel</h2>
                 </div>
                 <br>
 

@@ -43,7 +43,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="images/stephen-zoo.jpg" class="bd-placeholder-img-lg d-block w-100 home-img img-fluid" color="#333" background="#555" text="Fourth slide" />
+                <img src="images/stephen-zoo.jpg" class="bd-placeholder-img-lg d-block w-100 home-img img-fluid" color="#333" background="#555" text="Fifth slide" />
                 <div class="carousel-caption d-none d-md-block">
                     <h3>Click Or Call We Do It All!</h3>
                 </div>

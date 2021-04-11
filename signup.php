@@ -1,6 +1,6 @@
 <?php include 'include/header.php'; ?>
 
-<body style="background-image: url('images/img13.jpg');">
+<body class="signup-img">
     <?php include 'include/navbar.php'; ?>
     <div class="text container  form">
         <br />

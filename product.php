@@ -4,7 +4,7 @@ require_once 'config.php';
 
 <body>
     <?php include 'include/navbar.php' ?>
-    <div class="top">
+    <div class="mt-4">
 
         <?php
 

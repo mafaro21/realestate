@@ -17,7 +17,7 @@ if (!$_SESSION['email']) {
                         <li class="nav-item ">
                             <a class="active" href="user.php">
                                 <span data-feather="home"></span>
-                                <h5 class="text-dark">Dashboard</h5> <span class="sr-only">(current)</span>
+                                <h5 class="text">Dashboard</h5> <span class="sr-only">(current)</span>
                             </a>
                         </li>
 
@@ -25,13 +25,13 @@ if (!$_SESSION['email']) {
                         <li class="nav-item">
                             <a href="edit.php">
                                 <span data-feather="file"></span>
-                                <h5 class="color text-dark">Edit Profile</h5>
+                                <h5 class="color text">Edit Profile</h5>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="#">
                                 <span data-feather="file"></span>
-                                <h5 class="color text-dark" href="saved.php">Saved Houses</h5>
+                                <h5 class="color text" href="saved.php">Saved Houses</h5>
                             </a>
                         </li>
 
@@ -43,13 +43,13 @@ if (!$_SESSION['email']) {
             </nav>
 
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4  ">
-                <div class="align-items-center pt-3 pb-2 mb-3 border-bottom ">
+                <div class="align-items-center pt-3 pb-2 mb-3 border-bottom text">
                     <h2>WELCOME <?php echo $_SESSION['email']; ?></h2>
 
                 </div>
 
                 <div>
-                    <h2>Here Are All Your Saved Houses</h2>
+                    <h2 class="text">Here Are All Your Saved Houses</h2>
                 </div>
                 <br>
                 <?php
@@ -59,7 +59,7 @@ if (!$_SESSION['email']) {
                 $l = mysqli_num_rows($result);
 
                 if ($l == 0) {
-                    echo "<h4>There Seem To Be No Items In Your Cart, Go And Explore!</h4>";
+                    echo "<h4 class='text'>There Seem To Be No Items In Your Cart, Go And Explore!</h4>";
                 } else {
                     $email = $_SESSION['email'];
                     $sql = "SELECT * FROM cart, products WHERE cart.prodId = products.id AND cart.email = '$email';";
@@ -70,7 +70,7 @@ if (!$_SESSION['email']) {
 
                         <div class="content">
                             <div class="table-responsive table-bordered">
-                                <table class="table table-striped table-sm ">
+                                <table class="table table-striped table-sm text">
                                     <thead>
                                         <tr>
                                             <th>id</th>

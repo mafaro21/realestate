@@ -26,20 +26,25 @@ h3 {
 }
 
 body {
-    background-color: #ECE9E8;
-    /* background-color: #252741; */
+    background-color: var(--background);
     color: var(--text);
     transition: 0.5s background ease;
     font-family: 'Oxygen', sans-serif;
 }
 
-.navbar {
-    background-color: white;
+nav {
+    background-color: var(--accent);
     top: 0px;
 }
 
 input {
     width: 40%;
+}
+.signup-img{
+    background-image: url('images/img13.jpg');
+}
+.login-img{
+    background-image: url('images/img2.jpg');
 }
 
 .visible {
@@ -48,14 +53,18 @@ input {
 
 a:hover {
     color: purple;
+    text-decoration: none;
 }
 
 .white {
-    color: white;
+    color: var(--text);
 }
 
 .black {
     color: black;
+}
+.active1{
+    color: #A0AAB4;
 }
 
 .top {
@@ -72,10 +81,11 @@ a:hover {
 
 .text {
     text-align: center;
+    color: var(--text);
 }
 
 .accent {
-    color: #0275d8
+    color: var(--accent);
 }
 
 .main-image {
@@ -105,7 +115,7 @@ hr {
     color: white;
     font-size: 50px;
     font-weight: bold;
-    background-color: #0275d8;
+    background-color: var(--accent);
 }
 
 .pic {
@@ -117,7 +127,7 @@ hr {
 /* ok it worked */
 
 footer {
-    background-color: #0275d8;
+    background-color: var(--accent);
     left: 0;
     bottom: 0;
     width: 100%;
@@ -162,7 +172,7 @@ strong {
 /* forms */
 
 .form {
-    color: #0275d8;
+    color: var(--accent);;
 }
 
 .content {
@@ -216,11 +226,108 @@ strong {
 }
 
 .blue {
-    color: #0275d8;
+    color: var(--accent);;
 }
 
 
-@media screen and (max-width: 500px){
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: black;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+[data-theme="dark"]{
+    --background: #232933;
+    --text: #ECE9E8;
+    --accent: #011D36;
+    /* 011D36 */
+}
+
+[data-theme="dark"] .card-back{
+    background-color: #1F1F1F;
+    /* 252333 */
+}
+
+[data-theme="dark"] .card:hover {
+    box-shadow: 0 0 50px rgba(116, 116, 116, .6);
+}
+
+[data-theme="dark"]a:hover {
+    color: #CF9FCF;
+    text-decoration: none;
+}
+[data-theme="dark"].signup-img{
+    background-image: url('images/img13.jpg');
+    filter: brightness(10%);
+    -webkit-filter: brightness(50%);
+}
+[data-theme="dark"].login-img{
+    background-image: url('images/img2.jpg');
+    filter: brightness(10%);
+}
+[data-theme="dark"].active1{
+    color: #282B2D;
+}
+
+@media screen and (max-width: 576px){ 
+    /* mobile */
 
     .home-img{
         width: auto; 
@@ -241,7 +348,61 @@ strong {
     }
 
     .width {
-    width: 100%;
-    margin-top: 30px;
+        width: 100%;
+        margin-top: 10px;
+    }
 }
+
+@media screen and (max-width: 768px){
+
+
+    .home-img{
+        width: auto; 
+        height: 300px;
+    }
+
+    .product-img{
+        width: 100%; 
+        height: 400px;
+    }
+
+    .product-content{
+        display: block;
+    }
+
+    .width {
+        width: 100%;
+        margin-top: 30%;
+    }
+}
+
+@media screen and (max-width: 992px){
+
+    .home-img{
+        width: auto; 
+        height: 400px;
+    }
+
+    .product-img{
+        width: 96%; 
+        height: 300px;
+    }
+
+    .width {
+        width: 80%;
+        margin-top: 16%;
+    }
+}
+
+@media screen and (max-width: 1200px){
+
+    .home-img{
+        width: auto; 
+        height: 400px;
+    }
+
+    .width {
+        width: 80%;
+        margin-top: 10%;
+    }
 }

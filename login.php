@@ -1,6 +1,6 @@
 <?php include 'include/header.php'; ?>
 
-<body style="background-image: url('images/img2.jpg');">
+<body class="login-img">
 
     <?php include 'include/navbar.php'; ?>
     <div class="text container justify-content-center ">
