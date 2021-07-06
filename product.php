@@ -43,7 +43,7 @@ require_once 'config.php';
 
                 <div class="content">
                     <form method="POST" action="">
-                        <button type="submit" name="cart" class="btn btn-primary btnlog">Save</button>
+                        <button type="submit" name="cart" class="btn btn-primary btnlog">Add to Cart</button>
                     </form>
 
                     <div class="left">
@@ -98,7 +98,8 @@ require_once 'config.php';
             while ($row = mysqli_fetch_assoc($query)) {
             ?>
                 <h3>
-                    <?php echo $row['count']; ?> Comments
+                    <?php echo $row['count'] ?> 
+                    <?php echo $row['count'] == 1 ?  'Comment' :  'Comments' ;?>
                     <hr>
                 </h3>
 
@@ -111,16 +112,15 @@ require_once 'config.php';
             $sql = "SELECT * FROM comments WHERE prodId = '$id'; ";
             $query = mysqli_query($conn, $sql);
             while ($row = mysqli_fetch_array($query)) {
-                $test =
-                    $row['time'];
+                $test = $row['time'];
 
-                $date = date("d-M-yy H:i", strtotime($test));
+                $date = date("d-M-Y H:i", strtotime($test));
             ?>
                 <div>
                     <div class="content">
                         <p><?php echo $row['email']; ?></p>
                         <br>
-                        <p class="left blue"><?php echo $date ?></p>
+                        <p class="left comment-date"><?php echo $date ?></p>
                     </div>
                     <p><?php echo $row['comment']; ?></p>
                     <hr>
@@ -162,7 +162,7 @@ if (isset($_POST['comment'])) {
 
     if (mysqli_query($conn, $sql)) {
         echo '<script>alert("Your Comment Has Been Sent!");</script>';
-        echo `<script>window.open("product.php?id=.'$id'.");</script>`;
+        echo "<meta http-equiv='refresh' content='0'>"; //refresh page once
         exit();
     } else {
         echo "we have a problem" . mysqli_connect_error();

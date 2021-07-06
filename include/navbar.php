@@ -2,7 +2,7 @@
 
 use Stripe\Terminal\Location;
 
-include 'include/session.php'; ?>
+include 'session.php'; ?>
 
 
 
@@ -88,15 +88,15 @@ include 'include/session.php'; ?>
 
 
             if ($_SERVER['REQUEST_URI'] ===  "/realestate/signup.php") {
-                echo '<a class="nav-item nav-link active1 " href="signup.php">Sign Up</a>';
+                echo '<a class="nav-item nav-link active1 " href="signup.php">SignUp</a>';
             } else {
-                echo '<a class="nav-item nav-link white " href="signup.php">Sign Up</a>';
+                echo '<a class="nav-item nav-link white " href="signup.php">SignUp</a>';
             }
 
             if ($_SERVER['REQUEST_URI'] ===  "/realestate/login.php") {
-                echo '<a class="nav-item nav-link active1 " href="login.php">Log In</a>';
+                echo '<a class="nav-item nav-link active1 " href="login.php">LogIn</a>';
             } else {
-                echo '<a class="nav-item nav-link white " href="login.php">Log In</a>';
+                echo '<a class="nav-item nav-link white " href="login.php">LogIn</a>';
             }
 
             // echo '
@@ -115,7 +115,7 @@ include 'include/session.php'; ?>
 
 
 
-<?php include 'include/scripts.php'; ?>
+<?php include 'scripts.php'; ?>
 <!-- < src="script.js"></> -->
 
 <script>

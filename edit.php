@@ -11,36 +11,7 @@ if (!$_SESSION['email']) {
 <body class=" text">
     <div class="container-fluid top text text-dark">
         <div class="row">
-            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse"></nav>
-            <div class="sidebar-sticky pt-3 ">
-                <ul class="nav flex-column">
-                    <li class="nav-item ">
-                        <a class="active" href="user.php">
-                            <span data-feather="home"></span>
-                            <h5 class="text">Dashboard</h5> <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-
-                    <hr style="border: 1px solid ">
-                    <li class="nav-item">
-                        <a href="edit.php">
-                            <span data-feather="file"></span>
-                            <h5 class=" text">Edit Profile</h5>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="saved.php">
-                            <span data-feather="file"></span>
-                            <h5 class=" text" href="saved.php">Saved Houses</h5>
-                        </a>
-                    </li>
-
-                </ul>
-
-
-
-            </div>
-            </nav>
+        <?php include 'include/usernav.php' ?>
 
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4  ">
                 <div class="align-items-center pt-3 pb-2 mb-3 border-bottom ">
@@ -93,7 +64,7 @@ if (!$_SESSION['email']) {
                     <!-- <input type="button" name="answer" value="Show Div" onclick="showDiv()" /> -->
 
                     <input id="myButton" type="button" name="answer" class="btn text" value="Change Password Here" />
-                    <div id="myDiv" style="display:none;" class="answer_list container mt-3"> WELCOME
+                    <div id="myDiv" style="display:none;" class="answer_list container mt-3 text pb-5"> WELCOME
                         <br>
                         <form method="POST" action="">
                             <div class="table-responsive table-bordered container ">

@@ -11,36 +11,8 @@ if (!$_SESSION['email']) {
 <body class=" text">
     <div class="container-fluid top text  text-dark">
         <div class="row">
-            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
-                <div class="sidebar-sticky pt-3 ">
-                    <ul class="nav flex-column">
-                        <li class="nav-item ">
-                            <a class="active" href="user.php">
-                                <span data-feather="home"></span>
-                                <h5 class="text">Dashboard</h5> <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
+        <?php include 'include/usernav.php' ?>
 
-                        <hr style="border: 1px solid ">
-                        <li class="nav-item">
-                            <a href="edit.php">
-                                <span data-feather="file"></span>
-                                <h5 class="color text">Edit Profile</h5>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#">
-                                <span data-feather="file"></span>
-                                <h5 class="color text" href="saved.php">Saved Houses</h5>
-                            </a>
-                        </li>
-
-                    </ul>
-
-
-
-                </div>
-            </nav>
 
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4  ">
                 <div class="align-items-center pt-3 pb-2 mb-3 border-bottom text">
@@ -74,7 +46,7 @@ if (!$_SESSION['email']) {
                                     <thead>
                                         <tr>
                                             <th>id</th>
-                                            <th>Images</th>
+                                            <th>Image</th>
                                             <th>Description</th>
                                             <th>Location</th>
                                             <th>Buy($)</th>

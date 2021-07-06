@@ -11,23 +11,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 
-    <!-- local bootstrap -->
 
-    <link rel="stylesheet" href="bootstrap-4.5.2-dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="bootstrap-4.5.2-dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="bootstrap-4.5.2-dist/css/bootstrap-grid.css" />
-    <link rel="stylesheet" href="bootstrap-4.5.2-dist/css/bootstrap-grid.min.css" />
-    <link rel="stylesheet" href="bootstrap-4.5.2-dist/css/bootstrap-reboot.css" />
-    <link rel="stylesheet" href="bootstrap-4.5.2-dist/css/bootstrap-reboot.min.css" />
-
-    <script src="bootstrap-4.5.2-dist/js/bootstrap.bundle.js"></script>
-    <script src="bootstrap-4.5.2-dist/js/bootstrap.bundle.min.js"></script>
-    <script src="bootstrap-4.5.2-dist/js/bootstrap.js"></script>
-    <script src="bootstrap-4.5.2-dist/js/bootstrap.min.js"></script>
-
-
-
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
 
 
     <!-- includes the Braintree JS client SDK -->

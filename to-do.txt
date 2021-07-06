@@ -1,7 +1,5 @@
-fix documentation
---add agents table
---add edit function
---user management (modify details, 
-cart system
---comments
-
+6/7/21
+- new colors for dark mode
+- refresh page once after comment
+- made a navbar for the user panel
+- login/signup images dim on dark mode

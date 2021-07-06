@@ -10,6 +10,7 @@
     --background: #ECE9E8;
     --text: #000;
     --accent: #0275d8;
+    --comment: #0275d8;
 }
 
 .switch input {
@@ -41,10 +42,10 @@ input {
     width: 40%;
 }
 .signup-img{
-    background-image: url('images/img13.jpg');
+    background-image: url('../images/img13.jpg');
 }
 .login-img{
-    background-image: url('images/img2.jpg');
+    background-image: url('../images/img2.jpg');
 }
 
 .visible {
@@ -52,7 +53,7 @@ input {
 }
 
 a:hover {
-    color: purple;
+    color: #D86502;
     text-decoration: none;
 }
 
@@ -64,7 +65,8 @@ a:hover {
     color: black;
 }
 .active1{
-    color: #A0AAB4;
+    color: #fff;
+    font-weight: 600;
 }
 
 .top {
@@ -95,6 +97,7 @@ a:hover {
 .home-img{
     width: 800px; 
     height: 600px;
+    filter: 0;
 }
 
 hr {
@@ -103,6 +106,12 @@ hr {
 
 .index{
     margin-top: 1px;
+}
+.navbar-brand{
+    transition: all 0.2s;
+}
+.navbar-brand:hover{
+    transform: scale(1.1)
 }
 
 /* text over images probably */
@@ -190,7 +199,7 @@ strong {
 }
 
 .login {
-    margin-top: 150px;
+    margin-top: 80px;
 }
 
 /* product page */
@@ -205,7 +214,11 @@ strong {
 /* forms */
 
 .adminBody {
-    background-color: #81D4FA;
+    background-color: #20353E;
+}
+.admin-text{
+    text-align: center;
+    color: #fff;
 }
 
 .sidebar {
@@ -226,7 +239,10 @@ strong {
 }
 
 .blue {
-    color: var(--accent);;
+    color: var(--accent);
+}
+.comment-date{
+    color: var(--comment);
 }
 
 
@@ -293,11 +309,13 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+/* DARK MODE */
+
 [data-theme="dark"]{
     --background: #232933;
     --text: #ECE9E8;
     --accent: #011D36;
-    /* 011D36 */
+    --comment: #779898;
 }
 
 [data-theme="dark"] .card-back{
@@ -309,21 +327,26 @@ input:checked + .slider:before {
     box-shadow: 0 0 50px rgba(116, 116, 116, .6);
 }
 
-[data-theme="dark"]a:hover {
-    color: #CF9FCF;
+[data-theme="dark"] a:hover {
+    color: #CCCF1C;
     text-decoration: none;
 }
-[data-theme="dark"].signup-img{
-    background-image: url('images/img13.jpg');
-    filter: brightness(10%);
-    -webkit-filter: brightness(50%);
+[data-theme="dark"] .signup-img{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../images/img13.jpg');
+    
 }
-[data-theme="dark"].login-img{
-    background-image: url('images/img2.jpg');
-    filter: brightness(10%);
+[data-theme="dark"] .login-img{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../images/img2.jpg');
 }
-[data-theme="dark"].active1{
-    color: #282B2D;
+[data-theme="dark"] .active1{
+    color: #0275d8;
+}
+[data-theme="dark"] .logo{
+    color: #0275d8;
+}
+[data-theme="dark"] .home-img{
+    filter: brightness(70%);
+
 }
 
 @media screen and (max-width: 576px){ 

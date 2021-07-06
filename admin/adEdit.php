@@ -11,7 +11,7 @@ if (!$_SESSION['name']) {
 
 
 
-    <div class="container-fluid top text  text-dark">
+    <div class="container-fluid top admin-text  text-dark">
         <div class="row">
             <?php include 'adSidebar.php'; ?>
             <!-- <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
